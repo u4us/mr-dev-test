@@ -79,6 +79,6 @@ $(function(){
             $('#item-amount').text(totalItems);
         });
     } else{
-        $('add-to-cart').preventDefault();
+        $('#add-to-cart').preventDefault();
     }
 });
