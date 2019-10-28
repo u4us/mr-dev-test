@@ -10,10 +10,13 @@ class App extends React.Component{
       
     }
 
-    handleAddClick = (e)=>{
-      
-    }
+    
   }
+
+  handleAddClick = (e)=>{
+      
+  }
+  
   render(){
     return(
       <div className="App">
