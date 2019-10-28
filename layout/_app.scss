@@ -1,0 +1,102 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em 2em 1em;
+    box-sizing: border-box;
+
+    .image{
+        flex: 1 0 90%;
+        text-align: center;
+
+        img{
+            margin: auto;
+            width: 100%;
+        }
+    }
+
+    .content{
+        flex: 1 0 90%;
+
+        #title{
+            padding: 1em 0em 1em 0em;
+        }
+
+        #description{
+            color: $font-secondary;            
+            padding: 1em 0em 1em 0em;
+            line-height: 1.5em;
+        }
+        
+        #size-text{
+            color: $font-secondary;
+
+            #required{
+                color: $font-alert;
+            }
+
+            #display-size{
+                color: $border-dark-grey;
+            }
+        }
+
+        
+
+        .size-buttons{
+            display: flex;
+
+            .size-button{
+                border: thin solid $border-light-grey;
+                color: $font-secondary;
+                padding: 1em;
+                margin: 1em 0.5em 1em 0em;
+                width: 1em;
+                height: 1em;
+                text-align: center;
+                align-content: center;
+            }
+
+            .selected{
+                border: medium solid $border-dark-grey;
+                color: $border-dark-grey;
+            }
+        }
+
+        input[type=button]{
+            border: medium solid $font-primary;
+            padding: 0.5em 2em 0.5em 2em;
+            text-transform: uppercase;
+            transition: all ease 0.2s;
+        }
+
+        input[type=button]:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+/*for small tablet - inclusive*/
+@media only screen and (min-width : $bpSmallTab) {
+    .container{
+        max-width: 75vw;
+        margin: auto;
+        justify-content: space-between;
+        
+        .image{
+            flex: 0 0 45%;
+        }
+        .content{
+            flex: 0 0 45%;
+        }
+    }
+}
+
+/*for tablet - inclusive*/
+@media only screen and (min-width : $bpTab) {
+}
+
+/*for desktop - inclusive*/
+@media only screen and (min-width : $bpDesktop) {
+
+}

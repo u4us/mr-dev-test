@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i> (<span id="item-amount">0</span>)
+            </div>       
+        </div>
+        <div class="cart-expanded">
+            <div class="cart-item small-shirt">
+                <div class="item-image">
+                    <img src="assets/classic-tee.jpg" alt="">
+                </div>
+                <div class="item-description">
+                    <p>Classic Tee</p>
+                    <p><span id="small-amount">1</span>x <span class="cart-price">$75.00</span></p>
+                    <p>Size: S</p>
+                </div>
+            </div>
+
+            <div class="cart-item medium-shirt">
+                <div class="item-image">
+                    <img src="assets/classic-tee.jpg" alt="">
+                </div>
+                <div class="item-description">
+                    <p>Classic Tee</p>
+                    <p><span id="medium-amount">1</span>x <span class="cart-price">$75.00</span></p>
+                    <p>Size: M</p>
+                </div>
+            </div>
+
+            <div class="cart-item large-shirt">
+                <div class="item-image">
+                    <img src="assets/classic-tee.jpg" alt="">
+                </div>
+                <div class="item-description">
+                    <p>Classic Tee</p>
+                    <p><span id="large-amount">1</span>x <span class="cart-price">$75.00</span></p>
+                    <p>Size: L</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section app">
+        <div class="container">
+            <div class="image">
+                <img src="assets/classic-tee.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2 id="title">Classic Tee</h2>
+                <p id="price">$75.00</p>
+                <p id="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse recusandae voluptate quos pariatur, sed eum sunt asperiores consequuntur, facere nulla obcaecati officiis soluta labore vitae veritatis commodi, amet eligendi?
+                </p>
+                <p id="size-text">
+                    Size<span id="required">*</span> <span id="display-size"></span>
+                </p>
+                <div class="size-buttons">
+                    <div class="size-button small" data-size="S" data-cost="75">S</div>
+                    <div class="size-button medium" data-size="M" data-cost="75">M</div>
+                    <div class="size-button large" data-size="L" data-cost="75">L</div>
+                </div>
+                <input type="button" value="Add to Cart" id="add-to-cart">
+            </div>
+        </div>
+    </section>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
